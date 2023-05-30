@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import CardAbout from '../components/molecules/CardAbout';
 
 const About = () => {
+  useEffect(() => {
+    document.title = "About"; // Ganti "Judul Halaman" dengan judul yang Anda inginkan
+  }, []);
   return (
     <div className="bg-gray-100 py-8 mt-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

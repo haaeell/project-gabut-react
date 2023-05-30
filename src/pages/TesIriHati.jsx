@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import questions from "../api/questions.json";
 
 const TestIriHati = () => {
+  useEffect(() => {
+    document.title = "Test iri hati"; // Ganti "Judul Halaman" dengan judul yang Anda inginkan
+  }, []);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState([]);
   const [totalScore, setTotalScore] = useState(null);
@@ -37,7 +40,9 @@ const TestIriHati = () => {
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="max-w-xl bg-white shadow-lg rounded-lg p-8 flex">
         <div className="w-1/2">
-        <h2 className="text-3xl font-bold mb-4 items-center mr-3">{totalScore !== null ? "Hasil Test" : "Tes Iri Hati"}</h2>
+          <h2 className="text-3xl font-bold mb-4 items-center mr-3">
+            {totalScore !== null ? "Hasil Test" : "Tes Iri Hati"}
+          </h2>
 
           {totalScore === null && (
             <>
@@ -47,12 +52,11 @@ const TestIriHati = () => {
                 min="1"
                 max="5"
                 className="w-full h-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full appearance-none"
-  style={{ outline: "none" }}
+                style={{ outline: "none" }}
                 value={score[currentQuestion] || "0"}
                 onChange={handleScoreChange}
               />
               <div className="flex justify-between text-sm font-semibold text-gray-500">
-                
                 <span>0</span>
                 <span>1</span>
                 <span>2</span>
@@ -84,21 +88,25 @@ const TestIriHati = () => {
               Ulangi Test
             </button>
           )}
-         
         </div>
         {totalScore !== null && (
-            <div className="mt-8">
+          <div className="mt-8">
             <p className="text-lg font-semibold mb-2">Total Score:</p>
             <p className="text-4xl font-bold text-blue-500">{totalScore}</p>
             {getMessage(totalScore) && (
-              <p className="text-lg text-gray-600 mt-4">{getMessage(totalScore)}</p>
+              <p className="text-lg text-gray-600 mt-4">
+                {getMessage(totalScore)}
+              </p>
             )}
           </div>
-          
-          )}
+        )}
         {totalScore === null && (
-          <div className="w-1/2">
-            <img src={question.image} className="mx-auto" alt="Gambar" />
+          <div className="w-1/2 ml-3">
+            <img
+              src={question.image}
+              className="mx-auto rounded-lg shadow-lg hover:opacity-80 transition-opacity duration-300"
+              alt="Gambar"
+            />
           </div>
         )}
       </div>
@@ -115,6 +123,5 @@ const getMessage = (totalScore) => {
     return "Kamu iri hati banget banget ANJING";
   }
 };
-
 
 export default TestIriHati;
