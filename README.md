@@ -5,4 +5,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Hero Section 
 ![Halaman Test](dokumentasi/landingpage.png)
 ## Halaman Test 
-![Halaman Test](dokumentasi/test.png)
+![Halaman Test](dokumentasi/test1.png)
