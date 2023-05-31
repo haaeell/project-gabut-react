@@ -9,7 +9,7 @@ const Card = ({ image, title, description }) => {
           <div className="font-bold text-xl mb-2 text-center">{title}</div>
           <p className="text-gray-700 text-base mb-5">{description}</p>
           <div className="text-center">
-          <Button text="Selengkapnya"/>
+          <Button text="Selengkapnyaa"/>
               </div>
         </div>
       </div>
