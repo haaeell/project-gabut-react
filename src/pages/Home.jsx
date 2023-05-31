@@ -6,6 +6,7 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import CardSection from '../components/organisms/CardSection';
 import Hero from '../components/organisms/Hero'
+import ScrollToTop from "../components/atoms/ScrollToTop"
 
 const Home = () => {
   useEffect(() => {
@@ -18,6 +19,7 @@ const Home = () => {
       <ArticlesList/>
       <Contact/>
       <Footer/>
+      <ScrollToTop/>
     </>
   );
 };
