@@ -5,3 +5,8 @@
 body {
     font-family: 'Montserrat';;
 }
+
+.slick-list {
+    border-radius: 20px 30px 20px 60px;
+    overflow: hidden;
+}

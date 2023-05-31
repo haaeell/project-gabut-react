@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaFacebook, FaTwitter, FaInstagram, FaBars, FaTimes } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram, FaGithub , FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,12 +9,12 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  return (
-    <nav className="fixed top-0 left-0 right-0 bg-gradient-to-r from-blue-900 to-blue-500 p-4 ">
+  return ( 
+    <nav className="fixed top-0 left-0 right-0  p-6 bg-gradient-to-r from-blue-500 to-blue-900 shadow-lg shadow-blue-500/50 z-20" >
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white font-bold text-xl">Huru Hara</div>
+        <div className="text-white text-2xl font-extrabold">Huru Hara</div>
         <div className="flex items-center space-x-4">
-          <ul className={`hidden sm:flex space-x-4 ${isMenuOpen ? 'block' : 'hidden'}`}>
+          <ul className={`font-semibold hidden sm:flex space-x-7 ${isMenuOpen ? 'block' : 'hidden'}`}>
             <li>
               <Link to="/" className="text-white hover:text-gray-200">Home</Link>
             </li>
@@ -28,12 +28,13 @@ const Navbar = () => {
               <Link to="/contact" className="text-white hover:text-gray-200">Contact</Link>
             </li>
           </ul>
-          <div className="flex space-x-2">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-200">
-              <FaFacebook />
+          <div className="flex space-x-2 text-xl items-center">
+          <span className='hidden md:text-white md:block  md:mx-7'>|</span>
+          <a href="https://github.com/haaeell" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-200">
+              <FaGithub/>
             </a>
             <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-200">
-              <FaTwitter />
+              <FaLinkedin/>
             </a>
             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-200">
               <FaInstagram />
