@@ -7,7 +7,7 @@ import { FaArrowRight } from 'react-icons/fa';
 
 const Hero = () => {
   return (
-    <div className="bg-gray-200 py-8 mt-20">
+    <div className="bg-gray-200 py-8 mt-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white shadow-md rounded-lg flex flex-col-reverse sm:flex-row md:mt-10 p-6 gap-6">
           <div className="w-full sm:w-1/2">

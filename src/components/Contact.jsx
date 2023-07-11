@@ -3,7 +3,7 @@ import Button from './atoms/Button';
 
 const Contact = () => {
   return (
-    <section className="bg-gray-100 py-8 px-8">
+    <section className="bg-gray-100 py-8 px-16">
       <div className="container mx-auto">
         <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
         <form>

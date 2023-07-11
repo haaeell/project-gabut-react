@@ -7,6 +7,7 @@ import Footer from '../components/Footer';
 import CardSection from '../components/organisms/CardSection';
 import Hero from '../components/organisms/Hero'
 import ScrollToTop from "../components/atoms/ScrollToTop"
+import Skills from '../components/Skills';
 
 const Home = () => {
   useEffect(() => {
@@ -15,6 +16,7 @@ const Home = () => {
   return (
     <>
       <Hero/>
+      <Skills/>
       <CardSection/>
       <ArticlesList/>
       <Contact/>
