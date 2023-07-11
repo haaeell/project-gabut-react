@@ -64,7 +64,7 @@ const About = () => {
     <div className="bg-gray-100 py-8 mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white shadow-md rounded-lg p-6">
-          <h1 className="text-center text-3xl font-bold mb-4">About Page</h1>
+          <h1 className="text-center text-3xl font-bold mb-4">About Pages</h1>
           <div className="flex justify-between">
           <div className="flex items-center justify-center mt-10 mb-10">
                   {count > 0 && (

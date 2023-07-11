@@ -11,11 +11,11 @@ const SkillCard = ({skill}) => {
     setIsActive(false);
   };
 
-  const cardClassName = `relative bg-white shadow-lg rounded-lg py-4 ${
+  const cardClassName = `relative rounded-lg p-2 lg:py-4 ${
     isActive ? 'bg-gradient-to-t from-blue-600 to-blue-300 transition duration-500' : ''
   }`;
 
-  const imageClassName = `w-20 h-20 mx-auto mb-4 object-contain  ${
+  const imageClassName = `w-full h-full mx-auto mb-4 object-contain  ${
     isActive ? 'scale-110 transition duration-300' : ''
   }`;
 
