@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const SkillCard = ({skill}) => {
-    const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(false);
 
   const handleMouseEnter = () => {
     setIsActive(true);
@@ -18,6 +18,8 @@ const SkillCard = ({skill}) => {
   const imageClassName = `w-20 h-20 mx-auto mb-4 object-contain  ${
     isActive ? 'scale-110 transition duration-300' : ''
   }`;
+
+
     return (
         <div 
         className={cardClassName}
